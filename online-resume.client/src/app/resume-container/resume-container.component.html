@@ -1,13 +1,19 @@
-<table>
-    <tr>
-        <td>
-            <img src="assets/images/Profile.jpg" class="profile-picture">
-        </td>
-        <td class="summary">
-            <span>Ayat dah ada, kena cari dalam folder PC Resume.</span>
-        </td>
-    </tr>
-</table>
+<mat-toolbar class="background-height" color="primary">
+    <table class="table">
+        <div class="flex">
+            <div>
+                <img src="assets/images/Profile.jpg" class="profile-picture"  >
+            </div>
+            <div class="summary" style="color: white">
+                <span>Hello everyone, I am a just learning IT and on a jouney to become a junior IT professional through self-learning
+                    and with great mentor. My fascination with techology and its ever-evolving landscape has driven me to pursue a career in IT.
+                </span>
+            </div>
+        </div>
+    </table>
+</mat-toolbar>
+    
+
 
 
 
@@ -43,7 +49,7 @@
                         <p>{{ experience.descriptions}}</p>
 
                         <mat-chip-set>
-                            <mat-chip color="primary" *ngFor="let skill of experience.skills">{{skill}}</mat-chip>
+                            <mat-chip color="primary" selected *ngFor="let skill of experience.skills">{{skill}}</mat-chip>
                         </mat-chip-set>
                         <button mat-button>Gap</button>
                     </div>

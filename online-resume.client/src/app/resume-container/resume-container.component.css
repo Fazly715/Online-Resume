@@ -1,11 +1,26 @@
+.background-height {
+    height: auto;
+}
+
+.flex {
+    width: 200px;
+    margin: auto;
+    line-height: 100px;
+    
+}
+
 .profile-picture {
     width : 200px;
     height : auto;
     border-radius: 50%;
+
 }
 
 .summary {
     padding: 2em;
+    background-size:cover ;
+    align-items: center;
+    max-width: 0%;
 }
 
 .contact {

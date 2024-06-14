@@ -11,7 +11,7 @@ export class ResumeContainerComponent {
       title: 'Tooling coordinator',
       company: 'Fieldcore GE Sdn Bhd',
       date: '2021 - Present',
-      descriptions: 'Manage tooling to client smooth and repair major or overhaul tooling',
+      descriptions: 'Managing deadlines and progress across the team to ensure the project is delivered on time. While effective communication skills to interact with different teams, suppliers, and colleagues regarding tool requirements or maintenance schedules.',
       skills: ['Lean', '5s', '3s']
     },
     {
