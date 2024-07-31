@@ -1,15 +1,16 @@
 <mat-toolbar class="background-height" color="primary">
         <div class="flex-container-row">
             <div>
-                <img src="assets/images/Profile.jpg" class="profile-picture"  >
+                <img src="assets/images/me1.jpg" class="profile-picture"  >
             </div>
             <div class="summary flex-container-column gap-05">
                 <span class="header-text">
                     Summary
                 </span>
                 <span>
-                    Hello everyone, I am a just learning IT and on a jouney to become a junior IT professional through self-learning
-                    and with great mentor. My fascination with techology and its ever-evolving landscape has driven me to pursue a career in IT.
+                    Hello there! 👋 I am a passionate and self-motivated individual
+                     on a journey to become a junior IT professional through great mentor and self-learning.
+                     My fascination with technology and its ever-evolving landscape has driven me to pursue a career in IT.
                 </span>
             </div>
         </div>
@@ -22,27 +23,42 @@
         <td class="contact">
             <mat-card>
                 <mat-card-header>
-                    <mat-card-title>Contact Infomation</mat-card-title>
+                    <mat-card-title>Contact Information</mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
-                    <div *ngFor="let contact of contacts">
-                        <img src="{{contact.image}}">
-                        <a href="{{ contact.url}}" target="_blank">{{ contact.displayText}}</a>
-                        <mat-icon *ngIf="contact.copyable == true">content_copy</mat-icon>
-                        <button mat-button>BUTTON</button>
+                    <div *ngFor="let contact of contacts" class="contact-info">
+                        <img src="{{contact.image}}" alt="Contact Image">
+                        <a href="{{contact.url}}" target="_blank" class="custom-link">{{contact.displayText}}</a>
+                        <mat-icon *ngIf="contact.copyable" class="copy-icon" (click)="(contact)">content_copy</mat-icon>
+                       
                     </div>
                 </mat-card-content>
             </mat-card>
         </td>
+        
+
 
 
         <td>
             <mat-card>
                 <mat-card-header>
-                    <mat-card-title> History working place</mat-card-title>
+                    <mat-card-title class="large-title"> History working place</mat-card-title>
                 </mat-card-header>
+                <button mat-button> </button>
                 <mat-card-content>
-                    <div *ngFor="let experience of experiences">
+                    <style>
+                        .compact h1, .compact h2, .compact p {
+                            margin: 0.5;
+                            padding: 0;
+                        }
+                        .compact h1, .compact h2 {
+                            line-height: 0.5;
+                        }
+                        .compact p {
+                            line-height: 1.4;
+                        }
+                    </style>
+                    <div *ngFor="let experience of experiences" class="compact">
                         <h1 style="font-family : 'Roboto', sans-serif;">{{ experience.title}}</h1>
                         <h2 style="font-family : 'Roboto', sans-serif;">{{ experience.company}}</h2>
                         <p style="font-family : 'Roboto', sans-serif;">{{ experience.date}}</p>
@@ -51,7 +67,7 @@
                         <mat-chip-set>
                             <mat-chip color="primary" selected *ngFor="let skill of experience.skills">{{skill}}</mat-chip>
                         </mat-chip-set>
-                        <button mat-button>Gap</button>
+                        <button mat-button> </button>
                     </div>
                 </mat-card-content>
             </mat-card>

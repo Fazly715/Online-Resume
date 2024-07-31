@@ -43,7 +43,7 @@ export class ResumeContainerComponent {
       name: 'Gmail',
       url: 'mailto:fazly715@gmail.com',
       displayText: 'fazly715@gmail.com',
-      copyable: true
+      copyable: false
     },
     {
       image: 'assets/icons/whatsapp.svg',
@@ -54,13 +54,13 @@ export class ResumeContainerComponent {
     {
       image: 'assets/icons/linkedin.svg',
       name: 'linkedIn',
-      url: 'google.com',
-      displayText: 'fazly715',
+      url: 'https://www.linkedin.com/in/mohammad-fazly-a44757231/',
+      displayText: 'Mohd Fazly',
     },
     {
       image: 'assets/icons/github.svg',
       name: 'GitHub',
-      url: 'google.com',
+      url: 'https://github.com/Fazly715',
       displayText: 'fazly715',
     }
   ];

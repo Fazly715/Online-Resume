@@ -48,3 +48,56 @@
         justify-content: center;
     }
   }
+
+  .large-title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .contact-card {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.custom-link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000; /* Change to desired color */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+.copy-icon {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.custom-button {
+    background-color: #f5f5f5;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.custom-button:hover {
+    background-color: #e0e0e0;
+}
