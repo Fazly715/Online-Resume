@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
+            "main": "src/main.ts",
             "outputPath": "dist/online-resume.client",
             "index": "src/index.html",
             "browser": "src/main.ts",
