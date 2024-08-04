@@ -49,9 +49,9 @@
     }
   }
 
-  .large-title {
-    font-size: 30px;
-    font-weight: bold;
+  .contact-information {
+    font-size: 2.08em;
+    font-weight: bold
   }
 
   .contact-card {
@@ -77,8 +77,8 @@
 .custom-link {
     margin-left: 10px;
     text-decoration: none;
-    color: #000; /* Change to desired color */
-    font-weight: bold; /* Optional: make the text bold */
+    color: #000; 
+    font-weight: bold; 
 }
 
 .custom-link:hover {
@@ -100,4 +100,35 @@
 
 .custom-button:hover {
     background-color: #e0e0e0;
+}
+
+/* example.component.css */
+
+/* General styling for the mat-card title */
+.large-title {
+    font-size: 2.08em; /* Adjust the size as needed */
+    font-weight: bold;
+}
+
+/* Styles for compact layout */
+.compact h1,
+.compact h2,
+.compact p {
+    margin: 0.5em 0; /* Added margin to create gaps between elements */
+    padding: 0;
+}
+
+.compact h2 {
+    line-height: 0.9; /* Adjusted line height for headings */
+    font-size: 1.9em;
+    font-weight: 550;
+}
+
+.compact p {
+    line-height: 1.5; /* Adjusted line height for paragraphs */
+}
+
+/* Adding gap between each experience entry */
+.experience-entry {
+    margin-bottom: 20px; /* Adjust the gap between entries as needed */
 }

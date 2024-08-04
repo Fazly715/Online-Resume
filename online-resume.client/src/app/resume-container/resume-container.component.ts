@@ -41,15 +41,16 @@ export class ResumeContainerComponent {
     { 
       image: 'assets/icons/gmail.svg',
       name: 'Gmail',
-      url: 'mailto:fazly715@gmail.com',
+      url: 'fazly715@gmail.com',
       displayText: 'fazly715@gmail.com',
-      copyable: false
+      copyable: true
     },
     {
       image: 'assets/icons/whatsapp.svg',
       name: 'Whatsapp',
       url: 'http://wasap.my/60172911227',
       displayText: '+60172911227',
+      copyable: true
     },
     {
       image: 'assets/icons/linkedin.svg',
