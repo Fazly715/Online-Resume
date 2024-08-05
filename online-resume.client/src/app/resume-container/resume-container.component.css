@@ -137,4 +137,5 @@
 .summary-paragraph{
     word-wrap: break-word;
     max-width: 100vw;
+    white-space: break-spaces;
 }
