@@ -2,27 +2,27 @@
     height: auto;
 }
 
-.flex-container-column{
+.flex-container-column {
     display: flex;
     flex-direction: column;
 }
 
-.flex-container-row{
+.flex-container-row {
     display: flex;
     flex-direction: row;
 }
 
-.gap-1{
+.gap-1 {
     gap: 1em;
 }
 
-.gap-05{
+.gap-05 {
     gap: 0.5em;
 }
 
 .profile-picture {
-    width : 200px;
-    height : auto;
+    width: 200px;
+    height: auto;
     border-radius: 50%;
 
 }
@@ -37,24 +37,24 @@
     vertical-align: top;
 }
 
-.header-text{
+.header-text {
     font-size: xx-large;
 }
 
 /* if screen width is less than 640px, will apply the below class */
 @media screen and (max-width: 640px) {
-    .flex-container-row{
+    .flex-container-row {
         flex-wrap: wrap;
         justify-content: center;
     }
-  }
+}
 
   .contact-information {
     font-size: 2.08em;
     font-weight: bold
   }
 
-  .contact-card {
+.contact-card {
     margin: 20px;
     padding: 15px;
     border-radius: 8px;
@@ -82,7 +82,8 @@
 }
 
 .custom-link:hover {
-    text-decoration: underline; /* Optional: underline on hover */
+    text-decoration: underline;
+    /* Optional: underline on hover */
 }
 
 .copy-icon {
