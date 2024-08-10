@@ -18,7 +18,7 @@
 
 
 <div class="flex-container-row">
-    <mat-card>
+    <mat-card class="contact-flex">
         <mat-card-header>
             <mat-card-title class="contact-information">Contact Information</mat-card-title>
         </mat-card-header>
@@ -26,7 +26,7 @@
             <div *ngFor="let contact of contacts" class="contact-info">
                 <img src="{{contact.image}}" alt="Contact Image">
                 <a href="{{contact.url}}" target="_blank" class="custom-link">{{contact.displayText}}</a>
-                <mat-icon *ngIf="contact.copyable" class="copy-icon" (click)="(contact)">content_copy</mat-icon>
+                <mat-icon *ngIf="contact.copyable" class="copy-icon" (click)="copyToClipboard(contact.textToCopy)">content_copy </mat-icon>
 
             </div>
         </mat-card-content>

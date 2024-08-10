@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './portal-layout.component.css',
 })
 export class PortalLayoutComponent {
-
+  currentYear: number = new Date().getFullYear();
 }

@@ -43,14 +43,17 @@ export class ResumeContainerComponent {
       name: 'Gmail',
       url: 'fazly715@gmail.com',
       displayText: 'fazly715@gmail.com',
-      copyable: true
+      copyable: true,
+      textToCopy:'fazly715@gmail.com'
+      
     },
     {
       image: 'assets/icons/whatsapp.svg',
       name: 'Whatsapp',
       url: 'http://wasap.my/60172911227',
       displayText: '+60172911227',
-      copyable: true
+      copyable: true,
+      textToCopy:'+60172911227'
     },
     {
       image: 'assets/icons/linkedin.svg',
@@ -65,6 +68,15 @@ export class ResumeContainerComponent {
       displayText: 'fazly715',
     }
   ];
+  
+  copyToClipboard(text : string) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
 }
 
 
