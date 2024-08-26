@@ -7,10 +7,9 @@
             <span class="header-text">
                 Summary
             </span>
-            <span class="summary-paragraph">
-                Hello there! 👋 I am a passionate and self-motivated individual
-                on a journey to become a junior IT professional through great mentor and self-learning.
-                My fascination with technology and its ever-evolving landscape has driven me to pursue a career in IT.
+            <span class="summary-paragraph">Hello! 👋 I am a passionate and self-motivated individual on a journey to become
+                                            a junior IT professional through mentorship and self-learning. My fascination with 
+                                            technology and its ever-evolving landscape drives my pursuit of a career in IT.
             </span>
         </div>
     </div>
@@ -27,30 +26,46 @@
                 <img src="{{contact.image}}" alt="Contact Image">
                 <a href="{{contact.url}}" target="_blank" class="custom-link">{{contact.displayText}}</a>
                 <mat-icon *ngIf="contact.copyable" class="copy-icon" (click)="copyToClipboard(contact.textToCopy)">content_copy 
-                    
                 </mat-icon>
-                
-
             </div>
+        </mat-card-content>
+        <mat-card-header>
+
+
+            <mat-card-title class="skills-card">Software Development Skills</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <ul >
+                <li>Angular</li>
+                <li>.NET 8</li>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
         </mat-card-content>
     </mat-card>
 
-    <!-- example.component.html -->
+
 <mat-card>
     <mat-card-header>
         <mat-card-title class="large-title">Experience :</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <div *ngFor="let experience of experiences" class="experience-entry compact">
-            <h2>{{ experience.title }}</h2>
-            <h1>{{ experience.company }}</h1>
-            <p>{{ experience.date }}</p>
-            <p>{{ experience.descriptions }}</p>
-
-            <mat-chip-set>
-                <mat-chip color="primary" selected *ngFor="let skill of experience.skills">{{ skill }}</mat-chip>
-            </mat-chip-set>
-        </div>
+        <mat-stepper orientation="vertical" #stepper>
+            <mat-step *ngFor="let  experience of experiences" completed="false">
+                <ng-template matStepLabel>
+                    {{ experience.title }}, {{ experience.company }}
+                    <br>{{ experience.date }}
+                </ng-template>
+                {{ experience.descriptions }}
+                <mat-chip-set>
+                    <mat-chip color="primary" selected *ngFor="let skill of experience.skills">{{ skill }}</mat-chip>
+                </mat-chip-set>
+            </mat-step>
+          </mat-stepper>
     </mat-card-content>
 </mat-card>
 

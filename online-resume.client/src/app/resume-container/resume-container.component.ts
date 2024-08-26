@@ -12,29 +12,29 @@ export class ResumeContainerComponent {
       title: 'Tooling Coordinator',
       company: 'Fieldcore GE Sdn Bhd',
       date: '2021 - Present',
-      descriptions: 'Managing deadlines and progress across the team to ensure the project is delivered on time. While effective communication skills to interact with different teams, suppliers, and colleagues regarding tool requirements or maintenance schedules.',
+      descriptions: 'Manage deadlines and team progress to ensure timely project delivery. Utilize effective communication skills to interact with teams, suppliers, and colleagues regarding tool requirements and maintenance schedules. ',
       skills: ['Lean', '5s', '3s']
     },
     {
       title: 'Soundman Engineering',
       company: 'Panther Sound System Entertainment',
       date: '2019 - 2021',
-      descriptions: 'Setup sound system for client or take event-space for all days',
-      skills: ['Problem-solve', 'Smooth talk', 'Time manage']
+      descriptions: 'Set up sound systems for clients and manage event-space sound operations throughout the day.',
+      skills: ['Problem-solving', 'Communication', 'Time management']
     },
     {
       title: 'Technician Machining',
       company: 'Vecast Sdn Bhd',
       date: '2018 - 2019',
-      descriptions: 'To make sure machining runs smoothly and do daily maintenance',
-      skills: ['Code CNC', '5s', 'Fire hazard']
+      descriptions: 'Ensure smooth operation of machining processes and perform daily maintenance.',
+      skills: ['CNC Programming', '5s', 'Fire Hazard Management']
     },
     {
       title: 'Service Advisor',
       company: 'Osaga Service Center',
       date: '2017 - 2018',
-      descriptions: 'Check customer record and advise what to service next',
-      skills: ['Planning', 'Customer Service', 'Time manage']
+      descriptions: 'Review customer records and provide recommendations for upcoming services.',
+      skills: ['Planning', 'Customer Service', 'Communication']
     },
   ];
 
