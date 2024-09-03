@@ -60,7 +60,9 @@
                     {{ experience.title }}, {{ experience.company }}
                     <br>{{ experience.date }}
                 </ng-template>
-                {{ experience.descriptions }}
+                <div class="summary-paragraph">
+                    {{ experience.descriptions }}
+                </div>
                 <mat-chip-set>
                     <mat-chip color="primary" selected *ngFor="let skill of experience.skills">{{ skill }}</mat-chip>
                 </mat-chip-set>
